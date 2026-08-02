@@ -16,6 +16,8 @@ FAST-Reg is an end-to-end, cross-scale-aware unsupervised framework for real-tim
   <b>Graphical abstract of FAST-Reg.</b>
 </p>
 
+> **Current status:** This release currently provides the model definitions, pretrained weights, training records, and intermediate visualization results. Complete training, evaluation, visualization, and TensorRT deployment scripts are being organized and will be released progressively.
+
 ## Highlights
 
 - **Cross-scale-aware infrared-visible registration:**  
@@ -62,6 +64,7 @@ During training, the generator, discriminator, and registration network are join
 FAST-Reg
 ├── checkpoints
 │   └── 004_01_A2B
+│       ├── web
 │       ├── best_net_D.pth
 │       ├── best_net_F.pth
 │       ├── best_net_G.pth
@@ -74,8 +77,10 @@ FAST-Reg
 │       ├── lossR_log.txt
 │       └── train_opt.txt
 ├── models
+├── .gitattributes
+├── .gitignore
 ├── best_net_R.pth
-├── fig1.jpg
+├── graphical_abstract.jpg
 └── README.md
 ```
 
@@ -115,31 +120,21 @@ FAST-Reg adopts a training-deployment decoupling strategy. The modality translat
 
 ## Current Release
 
-The current repository provides:
+The current release provides:
 
-- Model definitions;
-- Pretrained registration weights;
-- Generator and discriminator checkpoints;
-- Training configuration and loss logs.
+- Model definitions for modality translation and image registration;
+- Pretrained registration weights for inference and deployment;
+- Generator, discriminator, feature sampler, and registration checkpoints;
+- Training configurations, loss logs, and intermediate visualization results.
 
-The complete training, evaluation, visualization, and TensorRT deployment scripts will be organized and updated progressively.
-
-## Citation
-
-The official BibTeX entry will be updated after the paper is formally published.
-
-```bibtex
-@article{fastreg,
-  title   = {FAST-Reg: Bridging the Cross-Scale Gap in Real-Time Registration via Scale-Aware Modality Translation},
-  author  = {To be updated},
-  journal = {To be updated},
-  year    = {To be updated}
-}
-```
+The remaining training, evaluation, visualization, and TensorRT deployment scripts are currently being organized and verified. They will be released progressively.
 
 ## Acknowledgements
 
 This repository is developed based on several excellent multimodal registration and image-to-image translation frameworks, including NeMAR, CUT, CycleGAN, and pix2pix. We sincerely thank the authors for their outstanding work.
+
+<details>
+<summary><b>Reference BibTeX</b></summary>
 
 ### NeMAR
 
@@ -186,3 +181,5 @@ This repository is developed based on several excellent multimodal registration 
   year      = {2017}
 }
 ```
+
+</details>
