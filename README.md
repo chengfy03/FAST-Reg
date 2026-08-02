@@ -16,8 +16,6 @@ FAST-Reg is an end-to-end, cross-scale-aware unsupervised framework for real-tim
   <b>Graphical abstract of FAST-Reg.</b>
 </p>
 
-> **Current status:** This release currently provides the model definitions, pretrained weights, training records, and intermediate visualization results. Complete training, evaluation, visualization, and TensorRT deployment scripts are being organized and will be released progressively.
-
 ## Highlights
 
 - **Cross-scale-aware infrared-visible registration:**  
