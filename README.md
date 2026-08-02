@@ -93,6 +93,7 @@ The repository currently provides the trained model checkpoints.
 | `best_net_R.pth` | Pretrained registration network for inference and deployment |
 | `checkpoints/004_01_A2B/best_net_G.pth` | Best generator checkpoint |
 | `checkpoints/004_01_A2B/best_net_D.pth` | Best discriminator checkpoint |
+| `checkpoints/004_01_A2B/best_net_F.pth` | Best feature sampler checkpoint |
 | `checkpoints/004_01_A2B/best_net_R.pth` | Best registration network checkpoint |
 | `checkpoints/004_01_A2B/latest_net_*.pth` | Latest training checkpoints |
 
