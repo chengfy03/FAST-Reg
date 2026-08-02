@@ -21,19 +21,13 @@ FAST-Reg is an end-to-end, cross-scale-aware unsupervised framework for real-tim
 ## Highlights
 
 - **Cross-scale-aware infrared-visible registration:**  
-  FAST-Reg is designed for cross-scale scenes containing targets with large variations in size.
+  FAST-Reg is proposed as a cross-scale-aware infrared-visible image registration framework.
 
-- **Cross-Scale Structural Interleaving:**  
-  A Cross-Scale Structural Interleaving (CSI) module jointly models macro-level structural topology and micro-level texture details.
-
-- **Geometry-consistent modality translation:**  
-  A multimodal identity mapping contrastive learning strategy preserves spatial semantics and geometric consistency during modality translation.
-
-- **Training-deployment decoupling:**  
-  The generator, discriminator, and registration network are jointly optimized during training. During deployment, only the registration network is retained.
+- **Cross-scale structure preservation:**  
+  Macro-level topology and micro-level texture are interleaved by the Cross-Scale Structural Interleaving (CSI) module to preserve cross-scale structures.
 
 - **Real-time edge deployment:**  
-  The TensorRT-optimized registration network achieves real-time inference on an NVIDIA Jetson Xavier NX.
+  The TensorRT-optimized FAST-Reg achieves real-time registration on a dual-band edge platform.
 
 ## Method Overview
 
